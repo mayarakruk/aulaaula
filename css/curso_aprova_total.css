@@ -1,0 +1,312 @@
+/*começa o index index*/
+
+body{/*parte corpo*/
+    font-family:Arial, Helvetica, sans-serif;
+    background-image:linear-gradient(to bottom,#006494,#247BA0);
+    width:90%;
+    margin:0 auto; /*divide o conteudo proporcialmente*/
+}
+
+header{ /*edição da parte do cabecalho*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    border-radius:5px;
+    margin-top:10px;/*margem que da espaço em cima*/
+    background-image:url("../img/img3.jpg"); /*imagem do caderno*/
+    height:350px;
+    opacity:0.90; /*aparece melhor a imagem*/
+    background-attachment:fixed; /* fixa a imagem*/
+    background-position:center; /*centraliza a imagem*/
+    background-repeat:no-repeat; /*não repetição imagem*/
+    background-size:cover; /*proporção*/
+}
+
+.img1{/*imagem escrita pre vestibular*/
+    max-width:30px;
+    max-height:45px;
+    width: auto;
+    height: auto;
+    color: white;
+}
+
+.navegar{/*sub-paginas*/
+    overflow: hidden;
+}
+
+.navegar a{
+    padding: 10px 10px;
+    float: right;
+    display: block;
+    color: #E8F1F2;
+    text-decoration: none;
+    text-align: right;
+}
+
+.navegar a:hover{ 
+    color:#13293D;
+    background-color:#E8F1F2;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.btn{
+    background-color: #13293D;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    
+}
+
+.btn a:hover{
+    background-color: #3580db;
+}
+
+.ul{/*escrita vestibular, enem e pss*/
+    overflow: hidden;
+    color: #E8F1F2;
+}
+
+.ul a{
+    float: right;
+    display: block;
+    color: #E8F1F2;
+    padding: 10px;
+    text-decoration: none;/*tira o sublinhado*/
+    text-align: right;
+}
+
+.con{/*conteudo central e lateral*/
+    float: left;
+    padding: 15px; 
+}
+
+.con.lateral{/*lateral esquerda/direita*/
+    width: 20%;
+    margin: 10px 2px 20px 2px;
+    background-color: #E8F1F2;
+    height: 365px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.con.central{/*do index*/
+    width: 50%;
+    margin: 10px 2px 2px 2px;
+    background-color: #E8F1F2;
+    height: 365px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.aprovados{/*antes das fotos dos aprovados*/
+    color:#000;
+    
+}
+
+.a{
+    height: 230px;
+    width: 341px;
+    border-radius: 5px;
+}
+
+.b{
+    height: 230px;
+    width: 341px;
+    border-radius: 5px;
+}
+
+.c{
+    height: 230px;
+    width: 341px;
+    border-radius: 5px;
+}
+
+.d{
+    height: 230px;
+    width: 341px;
+    border-radius: 5px;
+}
+
+#video{
+    text-align: center;
+}
+
+.infocontato{/*contado na pagina menu(index)*/
+    width: 100%;
+    height: 190px;
+    background-color:#E8F1F2 ;
+    border-radius: 5px;
+    image-orientation: center;
+}
+
+.todososdireitos{/*rodape da pagina index e avançado*/
+    text-align:center;
+    font-size: 20px;
+    color: #000;
+    padding: 20px;
+}
+
+@media screen and (max-width:800px){
+    .img1, .ul, .principal, .aprovados, .infocontato{
+        width: 90px; 
+        padding:0;  
+    }   
+}
+
+
+/*aqui começa o STODIMED, parallax*/
+.corpo1{
+    position:relative;
+    height: 100%;
+    opacity: 0.80;
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.pulmao{ 
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.pulmao span.oxigenio{ 
+    background-color: #13293D;
+    color: #E8F1F2;
+    padding: 18px;
+    letter-spacing: 10px;
+}
+
+.corpo2{
+    position: relative;
+    min-height: 100%;
+    opacity: 0.80;
+    background-position: center;
+    background-size: cover;
+}
+
+.corpo2 span.oxigenio{
+    background-color: transparent;
+    font-size: 25px;
+    background-color: #13293D;
+    color: #E8F1F2;
+    padding: 30px;
+    letter-spacing: 0px;
+}
+
+.corpo3{
+    position: relative;
+    min-height: 100%;
+    opacity: 0.80;
+}
+
+.corpo3 span.oxigenio{
+    background-color: transparent;
+    font-size: 25px;
+    color: #E8F1F2;
+    background-color: #13293D;
+    padding: 30px;
+    letter-spacing: 0px;
+}
+
+.coracao{/*bloco com escrita enem e vestibular*/
+    color:#13293D;
+    background-color: #E8F1F2;
+    text-align: justify;
+    padding: 50px 80px;
+}
+
+.coracao h3{/*escritas em <h3> dentro do box1*/
+    text-align: center;
+}
+
+.rim{/*bloco com escrita prepare-se para a aprovação*/
+    color: #000;
+    text-align: center;
+    padding: 50px 80px;
+    margin-top: 0px;
+    background-image:url("../img/img3.jpg");
+    height: 300px;
+    background-attachment: fixed; /* fixa a imagem*/
+    background-position: center; /*centraliza a imagem*/
+    background-repeat: no-repeat; /*não repetição imagem*/
+    background-size: cover; /*proporção*/
+}
+
+.figado{ /*ultimo bloco*/
+    color: #000;
+    background-color: #E8F1F2;
+    text-align: center;
+    padding: 50px 80px;
+}
+
+
+/* AQUI COMEÇA O AVANÇADO*/
+.con.direito{/*bloco branco direita*/
+    width: 46.5%;
+    margin: 10px 2px 2px 2px;
+    background-color: #E8F1F2;
+    height: 365px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.con.esquerdo{/*bloco branco esquerda*/
+    width: 46.5%;
+    margin: 10px 2px 2px 2px;
+    background-color: #E8F1F2;
+    height: 365px;
+    border-radius: 8px;
+   margin-top: 10px;
+}
+.e{
+    color: red;
+}
+
+
+.al{
+    overflow: hidden;
+    color: #E8F1F2;
+}
+
+.al a{
+    float: right;
+    display: block;
+    color: #E8F1F2;
+    padding: 10px;
+    text-decoration: none;/*tira o sublinhado*/
+    text-align: right;
+}
+
+.todososdireitos1{/*rodape da pagina index e avançado*/
+    text-align:center;
+    font-size: 20px;
+    color: #000;
+    padding: 20px;
+}
+
+@media screen and (max-width:800px){
+    .img1, .principal1{
+        width: 90px; 
+        padding:0;  
+    }   
+}
+
+/*COMEÇA O CONTATO*/
+.cont1{
+    color: #E8F1F2;
+}
+
+.cont{
+    color: #E8F1F2;
+}
