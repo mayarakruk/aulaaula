@@ -152,6 +152,14 @@ header{ /*edição da parte do cabecalho*/
     padding: 20px;
 }
 
+.fotosaprovados{
+    width: 100%;
+}
+
+.fotosaprovados img{
+    width: 24%;
+}
+
 @media screen and (max-width:800px){
     .img1, .ul, .principal, .aprovados, .infocontato{
         width: 90px; 
